@@ -1,11 +1,11 @@
 import Foundation
 
-public class LoginAPIClient: APIClient {
+public class LoginAPIClient: APIClient, LoginProviderProtocol {
     let session: URLSession
     let host: String
     
     let jsonDecoder: JSONDecoder = JSONDecoder()
-    let jsonEncoder: JSONEncoder = JSONEncoder()
+    let urlFormEncoder: URLEncodedFormEncoder = URLEncodedFormEncoder()
     
     required init(host: String, session: URLSession) {
         self.host = host

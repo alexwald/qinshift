@@ -7,7 +7,7 @@ class Dependencies {
     public var isUserLoggedIn: Bool { return storageController[.userName] != nil ? true : false }
 
     // MARK: - Networking clients
-    public let loginClient: LoginAPIClient
+    public let loginClient: LoginProviderProtocol
     
     public init(host: String, session: URLSession = .shared) {
         self.storageController = StorageController()

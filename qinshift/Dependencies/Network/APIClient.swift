@@ -7,8 +7,8 @@ protocol APIClient {
 
     // JSON decoder to decode responses
     var jsonDecoder: JSONDecoder { get }
-    // JSON Encoder to encode requests
-    var jsonEncoder: JSONEncoder { get }
+    // URL Form to encode requests
+    var urlFormEncoder: URLEncodedFormEncoder { get }
 
     // URL request creation and sending
     func send<T: DecodableAPIRequest>(_ request: T, authentication: Authentication) async throws -> T.Response
@@ -35,7 +35,7 @@ extension APIClient {
         switch request {
         case let encodableRequest as EncodableAPIRequest:
             // Encode parameters as JSON into httpBody if EncodableAPIRequest
-            urlRequest = try encodableRequest.urlRequest(with: host, encoder: jsonEncoder, authentication: authentication)
+            urlRequest = try encodableRequest.urlRequest(with: host, encoder: urlFormEncoder, authentication: authentication)
         default:
             urlRequest = try request.urlRequest(with: host, authentication: authentication)
         }
@@ -67,28 +67,10 @@ extension APIClient {
         let statusCode = httpResponse.statusCode
         switch statusCode {
         case 200...299:
-            // In case of no response, create an empty JSON and try to parse
-//            guard let data = response.data else {
-//                let error = APIClientError(
-//                    code: .noData,
-//                    request: request,
-//                    response: responseString,
-//                    responseStatusCode: statusCode
-//                )
-//                print(error.localizedDescription)
-//                throw error
-//            }
-
-            do {
-                // Try to decode response first
-                
-//                let object = try jsonDecoder.decode(APIResponseModel<T>.self, from: data)
-                let object = try jsonDecoder.decode(T.self, from: response.data)
-
-//                return object.data
-                return object
-                
-            } catch let error {
+        do {
+            let object = try jsonDecoder.decode(T.self, from: response.data)
+            return object
+        } catch let error {
                 // Handle JSON decoding error
                 let error = APIClientError(
                     code: .jsonDecoding,
@@ -121,23 +103,13 @@ extension APIClient {
         }
 
         let statusCode = httpResponse.statusCode
-        // Try to decode errors returned from BE
-        guard let errorModel = try? jsonDecoder.decode(APIResponseErrorModel.self, from: errorResponse.data) else {
-            // Handle no error data
-            return APIClientError(
-                code: .noData,
-                request: request,
-                response: responseString,
-                responseStatusCode: statusCode
-            )
-        }
-
-        let error = APIResponseError(
-            model: errorModel,
+        
+        // basic error handling for wrong username / password
+        return APIClientError(
+            code: statusCode == 401 ? .unathorized : .unknown ,
             request: request,
             response: responseString,
             responseStatusCode: statusCode
         )
-        return error
     }
 }

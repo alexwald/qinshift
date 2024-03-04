@@ -60,16 +60,16 @@
 		FA14BBE92B90DBF200626E8B /* URLRequest+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14BBE82B90DBF200626E8B /* URLRequest+Helpers.swift */; };
 		FA14BBEA2B90DBF200626E8B /* URLRequest+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14BBE82B90DBF200626E8B /* URLRequest+Helpers.swift */; };
 		FA14BBEB2B90DBF200626E8B /* URLRequest+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14BBE82B90DBF200626E8B /* URLRequest+Helpers.swift */; };
-		FA14BBED2B90DFB400626E8B /* APIResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14BBEC2B90DFB400626E8B /* APIResponseError.swift */; };
-		FA14BBEE2B90DFB400626E8B /* APIResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14BBEC2B90DFB400626E8B /* APIResponseError.swift */; };
-		FA14BBEF2B90DFB400626E8B /* APIResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14BBEC2B90DFB400626E8B /* APIResponseError.swift */; };
-		FA14BBF12B90E0E200626E8B /* APIResponseErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14BBF02B90E0E200626E8B /* APIResponseErrorModel.swift */; };
-		FA14BBF22B90E0E200626E8B /* APIResponseErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14BBF02B90E0E200626E8B /* APIResponseErrorModel.swift */; };
-		FA14BBF32B90E0E200626E8B /* APIResponseErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14BBF02B90E0E200626E8B /* APIResponseErrorModel.swift */; };
 		FA14BBF52B90E2BA00626E8B /* APIResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14BBF42B90E2BA00626E8B /* APIResponseModel.swift */; };
 		FA14BBF62B90E2BA00626E8B /* APIResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14BBF42B90E2BA00626E8B /* APIResponseModel.swift */; };
 		FA14BBF72B90E2BA00626E8B /* APIResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA14BBF42B90E2BA00626E8B /* APIResponseModel.swift */; };
 		FA25A3412B90EAFD00B826BD /* Atlantis in Frameworks */ = {isa = PBXBuildFile; productRef = FA25A3402B90EAFD00B826BD /* Atlantis */; };
+		FAC18E432B95C5BB00C068B4 /* LoginProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC18E422B95C5BB00C068B4 /* LoginProviderProtocol.swift */; };
+		FAC18E442B95C5BB00C068B4 /* LoginProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC18E422B95C5BB00C068B4 /* LoginProviderProtocol.swift */; };
+		FAC18E452B95C5BB00C068B4 /* LoginProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC18E422B95C5BB00C068B4 /* LoginProviderProtocol.swift */; };
+		FAC18E472B95D03B00C068B4 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC18E462B95D03B00C068B4 /* URLEncodedFormEncoder.swift */; };
+		FAC18E482B95D03B00C068B4 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC18E462B95D03B00C068B4 /* URLEncodedFormEncoder.swift */; };
+		FAC18E492B95D03B00C068B4 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC18E462B95D03B00C068B4 /* URLEncodedFormEncoder.swift */; };
 		FAD03C172B8FEEDF007AB662 /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD03C162B8FEEDF007AB662 /* BaseTextField.swift */; };
 		FAD03C192B8FEEDF007AB662 /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD03C162B8FEEDF007AB662 /* BaseTextField.swift */; };
 		FAD03C1C2B8FF131007AB662 /* BaseTextFieldWithError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD03C1B2B8FF131007AB662 /* BaseTextFieldWithError.swift */; };
@@ -155,9 +155,9 @@
 		FA14BBE02B90D9D900626E8B /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		FA14BBE42B90DB3300626E8B /* APIClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientError.swift; sourceTree = "<group>"; };
 		FA14BBE82B90DBF200626E8B /* URLRequest+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Helpers.swift"; sourceTree = "<group>"; };
-		FA14BBEC2B90DFB400626E8B /* APIResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseError.swift; sourceTree = "<group>"; };
-		FA14BBF02B90E0E200626E8B /* APIResponseErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseErrorModel.swift; sourceTree = "<group>"; };
 		FA14BBF42B90E2BA00626E8B /* APIResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseModel.swift; sourceTree = "<group>"; };
+		FAC18E422B95C5BB00C068B4 /* LoginProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProviderProtocol.swift; sourceTree = "<group>"; };
+		FAC18E462B95D03B00C068B4 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
 		FAD03C162B8FEEDF007AB662 /* BaseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
 		FAD03C1B2B8FF131007AB662 /* BaseTextFieldWithError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextFieldWithError.swift; sourceTree = "<group>"; };
 		FAD03C1E2B8FF145007AB662 /* ErrorConfigurableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorConfigurableProtocol.swift; sourceTree = "<group>"; };
@@ -272,15 +272,15 @@
 				FA14BBCC2B90D31300626E8B /* LoginRequest.swift */,
 				FA14BBC82B90D01900626E8B /* LoginAPIClient.swift */,
 				FA14BBD82B90D70100626E8B /* APIClient.swift */,
-				FA14BBEC2B90DFB400626E8B /* APIResponseError.swift */,
 				FA14BBF42B90E2BA00626E8B /* APIResponseModel.swift */,
 				FA14BBE42B90DB3300626E8B /* APIClientError.swift */,
-				FA14BBF02B90E0E200626E8B /* APIResponseErrorModel.swift */,
+				FAC18E462B95D03B00C068B4 /* URLEncodedFormEncoder.swift */,
 				FA14BBE82B90DBF200626E8B /* URLRequest+Helpers.swift */,
 				FA14BBE02B90D9D900626E8B /* Authentication.swift */,
 				FA14BBDC2B90D77E00626E8B /* DecodableAPIRequest.swift */,
 				FA14BBD42B90D63E00626E8B /* AWSDKReachability.swift */,
 				FA14BBD02B90D32700626E8B /* LoginResponseModel.swift */,
+				FAC18E422B95C5BB00C068B4 /* LoginProviderProtocol.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -487,10 +487,10 @@
 				FA14BBBC2B90A49E00626E8B /* DefaultsStorage.swift in Sources */,
 				FA14BBC92B90D01900626E8B /* LoginAPIClient.swift in Sources */,
 				FA14BBB32B90A06100626E8B /* StorageController.swift in Sources */,
+				FAC18E472B95D03B00C068B4 /* URLEncodedFormEncoder.swift in Sources */,
 				FA14BBC42B90BD4A00626E8B /* UINavigationController+Extensions.swift in Sources */,
 				FAD03C222B8FF203007AB662 /* ErrorViewWithTexFieldProtocol.swift in Sources */,
 				FA14BBDD2B90D77E00626E8B /* DecodableAPIRequest.swift in Sources */,
-				FA14BBF12B90E0E200626E8B /* APIResponseErrorModel.swift in Sources */,
 				FAD03C502B901A38007AB662 /* LoginParametersError.swift in Sources */,
 				FA14BBAF2B8FC96D00626E8B /* String+Extensions.swift in Sources */,
 				FA14BBD52B90D63E00626E8B /* AWSDKReachability.swift in Sources */,
@@ -500,6 +500,7 @@
 				FAD03C282B8FF2B6007AB662 /* ErrorTextFieldProtocol.swift in Sources */,
 				FAD03C2B2B8FF329007AB662 /* SecureTextField.swift in Sources */,
 				FAD03C172B8FEEDF007AB662 /* BaseTextField.swift in Sources */,
+				FAC18E432B95C5BB00C068B4 /* LoginProviderProtocol.swift in Sources */,
 				FA14BBB82B90A3F900626E8B /* StorageKeys.swift in Sources */,
 				FAD03C4C2B9013E4007AB662 /* Config.swift in Sources */,
 				FAD03C542B901CC5007AB662 /* UserViewModel.swift in Sources */,
@@ -508,7 +509,6 @@
 				FA14BB7B2B8FC3FB00626E8B /* AppDelegate.swift in Sources */,
 				FAD03C422B9011B1007AB662 /* LoginController.swift in Sources */,
 				FA14BBD12B90D32700626E8B /* LoginResponseModel.swift in Sources */,
-				FA14BBED2B90DFB400626E8B /* APIResponseError.swift in Sources */,
 				FAD03C352B8FF4CB007AB662 /* RoundedButton.swift in Sources */,
 				FA14BBE92B90DBF200626E8B /* URLRequest+Helpers.swift in Sources */,
 				FAD03C392B8FF71D007AB662 /* DetailViewController.swift in Sources */,
@@ -520,13 +520,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA14BBEA2B90DBF200626E8B /* URLRequest+Helpers.swift in Sources */,
-				FA14BBF22B90E0E200626E8B /* APIResponseErrorModel.swift in Sources */,
 				FAD03C3E2B900007007AB662 /* WindowHelpers.swift in Sources */,
+				FAC18E442B95C5BB00C068B4 /* LoginProviderProtocol.swift in Sources */,
 				FA14BBB92B90A3F900626E8B /* StorageKeys.swift in Sources */,
 				FAD03C552B901CC5007AB662 /* UserViewModel.swift in Sources */,
 				FA14BBC12B90A57600626E8B /* FileController.swift in Sources */,
+				FAC18E482B95D03B00C068B4 /* URLEncodedFormEncoder.swift in Sources */,
 				FA14BBAC2B8FC74E00626E8B /* LoginViewController.swift in Sources */,
-				FA14BBEE2B90DFB400626E8B /* APIResponseError.swift in Sources */,
 				FA14BBD62B90D63E00626E8B /* AWSDKReachability.swift in Sources */,
 				FA14BBB42B90A06100626E8B /* StorageController.swift in Sources */,
 				FA14BBBD2B90A49E00626E8B /* DefaultsStorage.swift in Sources */,
@@ -565,10 +565,10 @@
 				FAD03C2F2B8FF33B007AB662 /* SecureTextFieldWithError.swift in Sources */,
 				FA14BBCB2B90D01900626E8B /* LoginAPIClient.swift in Sources */,
 				FA14BBBE2B90A49E00626E8B /* DefaultsStorage.swift in Sources */,
+				FAC18E492B95D03B00C068B4 /* URLEncodedFormEncoder.swift in Sources */,
 				FA14BBC62B90BD4A00626E8B /* UINavigationController+Extensions.swift in Sources */,
 				FA14BBB52B90A06100626E8B /* StorageController.swift in Sources */,
 				FA14BBDF2B90D77E00626E8B /* DecodableAPIRequest.swift in Sources */,
-				FA14BBF32B90E0E200626E8B /* APIResponseErrorModel.swift in Sources */,
 				FAD03C2C2B8FF329007AB662 /* SecureTextField.swift in Sources */,
 				FAD03C522B901A38007AB662 /* LoginParametersError.swift in Sources */,
 				FA14BBD72B90D63E00626E8B /* AWSDKReachability.swift in Sources */,
@@ -578,6 +578,7 @@
 				FAD03C192B8FEEDF007AB662 /* BaseTextField.swift in Sources */,
 				FA14BB9C2B8FC40400626E8B /* qinshiftUITests.swift in Sources */,
 				FAD03C232B8FF203007AB662 /* ErrorViewWithTexFieldProtocol.swift in Sources */,
+				FAC18E452B95C5BB00C068B4 /* LoginProviderProtocol.swift in Sources */,
 				FA14BBBA2B90A3F900626E8B /* StorageKeys.swift in Sources */,
 				FAD03C4E2B9013E4007AB662 /* Config.swift in Sources */,
 				FAD03C562B901CC5007AB662 /* UserViewModel.swift in Sources */,
@@ -586,7 +587,6 @@
 				FAD03C262B8FF221007AB662 /* ErrorDescriptionLabel.swift in Sources */,
 				FAD03C442B9011B1007AB662 /* LoginController.swift in Sources */,
 				FA14BBD32B90D32800626E8B /* LoginResponseModel.swift in Sources */,
-				FA14BBEF2B90DFB400626E8B /* APIResponseError.swift in Sources */,
 				FAD03C372B8FF4CB007AB662 /* RoundedButton.swift in Sources */,
 				FA14BBEB2B90DBF200626E8B /* URLRequest+Helpers.swift in Sources */,
 				FAD03C3B2B8FF71D007AB662 /* DetailViewController.swift in Sources */,
@@ -755,6 +755,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -762,6 +763,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = us.passionmakes.qinshift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -784,6 +788,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -791,6 +796,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = us.passionmakes.qinshift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -813,7 +821,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/qinshift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/qinshift";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wald.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/wald";
 			};
 			name = Debug;
 		};
@@ -833,7 +841,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/qinshift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/qinshift";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wald.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/wald";
 			};
 			name = Release;
 		};

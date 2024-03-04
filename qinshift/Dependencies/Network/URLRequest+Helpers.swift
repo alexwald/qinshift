@@ -7,8 +7,9 @@ public enum HTTPHeaderField: String {
 
 public enum ContentType: String {
     case json = "application/json"
-    case pdf = "application/pdf"
+    case urlencoded = "application/x-www-form-urlencoded"
     case multipart = "multipart/form-data; boundary="
+    // case ...
 }
 
 public enum HTTPMethod: String {
@@ -42,6 +43,10 @@ public extension URLRequest {
     mutating func setJSONContentType() {
         setValue(ContentType.json.rawValue, forHTTPHeaderField: .contentType)
     }
+    
+    mutating func setUrlEncpodedContentType() {
+        setValue(ContentType.urlencoded.rawValue, forHTTPHeaderField: .contentType)
+    }
 
     mutating func setMimeContentType(with contentType: String) {
         setValue(contentType, forHTTPHeaderField: .contentType)
@@ -56,6 +61,10 @@ public extension URLRequest {
     }
 
     mutating func setJSONContent<T: Encodable>(_ content: T, encoder: JSONEncoder) throws {
+        self.httpBody = try encoder.encode(content)
+    }
+    
+    mutating func setUrlEncodedContent<T: Encodable>(_ content: T, encoder: URLEncodedFormEncoder) throws {
         self.httpBody = try encoder.encode(content)
     }
 

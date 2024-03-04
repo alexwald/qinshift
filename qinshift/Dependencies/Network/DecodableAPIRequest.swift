@@ -1,6 +1,5 @@
 import Foundation
 
-//typealias CommonQueryAPIRequest = DecodableAPIRequest & QueryableAPIRequest
 typealias CodableAPIRequest = DecodableAPIRequest & EncodableAPIRequest
 
 protocol DecodableAPIRequest: APIRequest {
@@ -17,7 +16,7 @@ protocol APIRequest: BaseAPIRequest {
 }
 
 protocol EncodableAPIRequest: APIRequest, Encodable {
-    func urlRequest(with host: String, encoder: JSONEncoder, authentication: Authentication) throws -> URLRequest
+    func urlRequest(with host: String, encoder: URLEncodedFormEncoder, authentication: Authentication) throws -> URLRequest
 }
 
 extension EncodableAPIRequest {
@@ -30,17 +29,17 @@ extension EncodableAPIRequest {
 
         // Create URL request
         var urlRequest = URLRequest(url: url)
-        urlRequest.setJSONContentType()
+        urlRequest.setUrlEncpodedContentType()
         urlRequest.setHTTPMethod(httpMethod)
         urlRequest.setAuthentication(authentication)
 
         return urlRequest
     }
 
-    func urlRequest(with host: String, encoder: JSONEncoder, authentication: Authentication) throws -> URLRequest {
+    func urlRequest(with host: String, encoder: URLEncodedFormEncoder, authentication: Authentication) throws -> URLRequest {
         var urlRequest = try urlRequest(with: host, authentication: authentication)
         if httpMethod != .GET && httpMethod != .DELETE {
-            try urlRequest.setJSONContent(self, encoder: encoder)
+            try urlRequest.setUrlEncodedContent(self, encoder: encoder)
         }
         return urlRequest
     }

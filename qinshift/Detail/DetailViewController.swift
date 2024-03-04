@@ -106,8 +106,8 @@ class DetailViewController: UIViewController {
     
     @objc func logoutButtonTapped() {
         let alert = UIAlertController(title: NSLocalizedString("Alert", comment: "alert title"), message: NSLocalizedString("Are you sure you want to log out?", comment: "logout confirmation text"), preferredStyle: .alert)
-        let cancel = UIAlertAction(title: NSLocalizedString("Cancel", comment: "cancel"), style: .cancel)
-        let logout = UIAlertAction(title: NSLocalizedString("Retry", comment: "retry"), style: .destructive) { action in
+        let cancel = UIAlertAction(title: NSLocalizedString("Cancel", comment: "cancel button title"), style: .cancel)
+        let logout = UIAlertAction(title: NSLocalizedString("Logout", comment: "logout button title"), style: .destructive) { action in
             WindowHelpers.logoutUser(dependencies: self.dependencies)
         }
         alert.addAction(cancel)

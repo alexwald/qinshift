@@ -9,10 +9,33 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>qinshiftUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>wald.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>FA14BB762B8FC3FB00626E8B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA14BB8C2B8FC40400626E8B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA14BB962B8FC40400626E8B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

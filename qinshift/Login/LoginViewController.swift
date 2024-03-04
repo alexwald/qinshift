@@ -169,7 +169,10 @@ class LoginViewController: UIViewController {
     }
     
     func handleLoginFailure(error: Error) {
-        let alert = UIAlertController(title: NSLocalizedString("Error", comment: "error alert title"), message: NSLocalizedString("failed to log in.", comment: "error message"), preferredStyle: .alert)
+        var errorMessage = error.localizedDescription
+        
+        if let localizedError = error as? APIClientError { errorMessage = localizedError.code.localizedError }
+        let alert = UIAlertController(title: NSLocalizedString("Login Failure", comment: "login error alert title"), message: errorMessage, preferredStyle: .alert)
         let cancel = UIAlertAction(title: NSLocalizedString("Cancel", comment: "cancel"), style: .destructive)
         let retry = UIAlertAction(title: NSLocalizedString("Retry", comment: "retry"), style: .default) { action in
             self.loginButtonTapped()

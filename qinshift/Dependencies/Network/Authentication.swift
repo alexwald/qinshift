@@ -9,7 +9,6 @@ public enum Authentication {
         case .none:
             return nil
         case .password(let password):
-//            return "Authorization \(password)"
             return "\(password)"
         }
     }

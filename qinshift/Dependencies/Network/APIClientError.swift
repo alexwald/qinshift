@@ -49,11 +49,30 @@ extension APIClientError: Equatable {
 // MARK: - API Client Error codes
 public enum APIClientErrorCode: String, APIErrorCodeProtocol {
     case notConnectedToInternet, urlCreating, urlRequestCreating
-    case invalidResponse, noData, jsonDecoding
-    case noActiveAuthSession, noStoredUserId
+    case invalidResponse, unknown, jsonDecoding
+    case unathorized
 
     public var codeIndex: Int {
         return Self.allCases.firstIndex(of: self) ?? 0
+    }
+    
+    public var localizedError: String {
+        switch self {
+        case .notConnectedToInternet:
+            return NSLocalizedString("No internet connection", comment: "")
+        case .urlCreating:
+            return NSLocalizedString("Error creating URL", comment: "")
+        case .urlRequestCreating:
+            return NSLocalizedString("Error creating URL request", comment: "")
+        case .invalidResponse:
+            return NSLocalizedString("Invalid response", comment: "")
+        case .unknown:
+            return NSLocalizedString("Unknown error", comment: "")
+        case .jsonDecoding:
+            return NSLocalizedString("Error decoding JSON", comment: "")
+        case .unathorized:
+            return NSLocalizedString("Wrong username or password", comment: "")
+        }
     }
 }
 

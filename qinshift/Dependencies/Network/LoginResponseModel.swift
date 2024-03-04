@@ -10,6 +10,5 @@ struct LoginResponseModel: Decodable {
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.image = try container.decode(String.self, forKey: .image)
-
     }
 }
