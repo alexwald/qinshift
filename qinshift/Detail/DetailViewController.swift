@@ -36,6 +36,13 @@ class DetailViewController: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
+     override func viewIsAppearing(_ animated: Bool) {
+        super.viewIsAppearing(animated)
+         roundContainer.clipsToBounds = true
+         roundContainer.layer.masksToBounds = true
+         roundContainer.layer.cornerRadius = roundContainer.frame.width / 2
+    }
+    
     func configureViews() {
         view.backgroundColor = UIColor(named: "AWSessionBackground")
         instructionLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -93,7 +100,6 @@ class DetailViewController: UIViewController {
         ])
         
         view.layoutIfNeeded()
-        setRoundContainerCornerRadius()
     }
     
     func setRoundContainerCornerRadius() {
